@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Kontakt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section metatags
+{
+    <meta name="description" content="Kontakt" />
+    <meta name="keywords" content="Kontakt" />
+}
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-item nav-link" href="~/Home/Index">Strona Główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link active" href="~/Home/Kontakt">Kontakt <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-item nav-link" href="~/Home/Contact">PL/EN</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Contact form -->
+
+<div class="container">
+
+    <h3 class="text-center">Napisz do mnie</h3><br />
+
+    <div class="row">
+        <div class="col-md-8">
+            <form action="/post" method="post">
+                <input class="form-control" name="name" placeholder="Twoje Imię" /><br />
+                <input class="form-control" name="email" placeholder="Email" /><br />
+                <input class="form-control" name="subject" placeholder="Temat" /><br />
+                <textarea class="form-control" name="text" placeholder="Twoja wiadomość" style="height:150px;"></textarea><br />
+                <button type="button" class="btn btn-dark">Wyślij</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            Telefon: +48 123 456 789<br />
+            E-mail: <a href="mailto:s198702@sggw.edu.pl">s198702@sggw.edu.pl</a><br />
+            <br /><br />
+            <b>Adres:</b><br />
+            ul. Jakaś 21/37<br />
+            03-303 Warszawa, Polska<br />
+        </div>
+    </div>
+</div>

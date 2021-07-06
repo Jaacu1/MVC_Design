@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Moje ulubione książki";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section metatags
+{
+    <meta name="description" content="Index Page" />
+    <meta name="keywords" content="Index" />
+}
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-item nav-link active" href="~/Home/Index">Strona Główna <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link" href="~/Home/Kontakt">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-item nav-link" href="~/Home/Home">PL/EN</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:LightGray">
+    <div class="w3-content">
+        <h1 class="w3-cen" style="text-align:center">Moje ulubione książki</h1>
+        <h5 class="w3-padding-32" style="text-align:center">
+            <i>Nic tak nie zabija czasu jak książka</i>
+            <br>Cesare Pavese
+        </h5>
+
+        <p class="w3-text-grey">
+            Cześć, nazywam się Jacek, mam 28 lat i pochodzę z Warszawy. W wolnych chwilach lubię jeździć na rowerze, grać w gry komputerowe,
+            spędzać czas ze znajomymi i czytać książki. Właśnie tej ostatniej pasji poświęcona jest ta strona. Możesz tu znaleźć moje ulubione
+            książki oraz serie literackie, a także informacje o nich. Być może znajdziesz tu coś dla siebie. Zapraszam do przeglądania.
+        </p>
+    </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h2>Seria <i>Kroniki Królobójcy</i></h2>
+            <h5 class="w3-padding-32">
+                Autor: Patrick Rothfuss
+                <br><br>
+                <i>Imię wiatru</i> (2007)<br>
+                <i>Strach mędrca</i> (2011)<br>
+                <i>The Doors of Stone</i> (tytuł roboczy)
+            </h5>
+            <p class="w3-text-grey">
+                Kroniki Królobójcy to seria książek fantasy opowiadająca historię Kvothe, poszukiwacza przygód i muzyka.
+                Książka jest w dużej mierze opowiedziana w formacie "historii w historii" - czytelnik poznaje historię życia
+                Kvothe z jego opowiadań snutych kronikarzowi. Sama fabuła jest podzielona na dwie części: opowiadającą o
+                przeszłości głównego bohatera oraz o teraźniejszych wydarzeniach. Śledzimy w nich historię Kvothe od
+                dzieciństwa, gdzie tragicznie stracił rodziców, poznając jego różnorakie przygody w świecie,
+                w którym istnieją fantastyczne stworzenia i magia, której ciekawą formą jest sympatia - rodzaj magii
+                porównywalnej do nieco fantastycznej wersji prawa zachowania energii. Nasz bohater próbuje spotyka
+                na swojej drodze różne przeszkody, z którymi musi się uporać, jeśli chce poznać tajemnicę śmierci
+                swoich rodziców.
+            </p>
+            <p margin-top: 30px>
+                @Html.ActionLink("Czytaj więcej...", "Kroniki_Krolobojcy")
+            </p>
+        </div>
+        <div class="w3-third w3-center">
+            <img src="~/Content/images/coverR1.jpg" alt="Kroniki Królobójcy" class="w3-padding-64 w3-text-red">
+        </div>
+    </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h2>Seria <i>Opowieść o kamratach</i></h2>
+            <h5 class="w3-padding-32">
+                Autor: Douglas Hulick
+                <br><br>
+                <i>Honor złodzieja</i> (2011)<br>
+                <i>Przysięga stali</i> (2014)<br>
+            </h5>
+            <p class="w3-text-grey">
+                Opowieść o kamratach to historia przygodach Drothe, na pozór zwykłego członka organizacji przestępczej
+                władającej jedną z dzielnic w dużym, portowym mieście. Drothe od zwykłego złodziejaszka awansował w
+                hierarchii na człowieka określanego mianem "nosa" - zajmuje się węszeniem po mieście i wyszukiwaniem
+                informacji, które są jego towarem. Pomaga mu w tym jego niezwykła zdolność pozwalająca widzieć w ciemności
+                niczym kot, a także przyjaźń z członkiem najbardziej elitarnego bractwa najemników - Brązowym Deganem.
+                Życie Drothe układa się całkiem dobrze, jednak mimowolnie wplątuje się on w intrygę wagi państwowej, co
+                przysparza mu wrogów zarówno w kryminalnym półświatku jak i wśród wysłanników Imperatora. Teraz musi
+                wykazać się nielada sprytem i przebiegłością, by udało mu się wyplątać z tej sprawy i pozostać przy życiu.
+            </p>
+            <p margin-top: 30px>
+                @Html.ActionLink("Czytaj więcej...", "Opowiesc_o_kamratach")
+            </p>
+        </div>
+        <div class="w3-third w3-center">
+            <img src="~/Content/images/coverH1.jpg" alt="Opowieść o Kamratach" class="w3-padding-64 w3-text-red">
+        </div>
+    </div>
+</div>
+
+<!-- Cookies popup -->
+<div id="simplecookienotification_v01" style="display: block; z-index: 99999; min-height: 35px; width: 300px; position: fixed; background: #ecf9f2; border: 1px solid black; text-align: center; right: 10px; top: 10px; color: black;">
+    <div style="padding:10px; margin-left:15px; margin-right:15px; font-size:14px; font-weight:normal;">
+        <span id="simplecookienotification_v01_powiadomienie">Informujemy, że strona korzysta z informacji zapisanych za pomocą plików cookies na urządzeniach końcowych użytkowników w celu dostosowania treści przedstawianych w serwisie do Państwa potrzeb. Pliki cookies można kontrolować, zmieniając ustawienia przeglądarki. W przypadku dalszego korzystania z serwisu bez zmiany ustawień oznacza to zgodę Użytkownika na stosowanie plików cookies.</span><span id="br_pc_title_html"><br></span>
+        <a id="simplecookienotification_v01_polityka" href="~/Home/Polityka_prywatnosci" style="color: #339966;">Polityka Prywatności</a><span id="br_pc2_title_html"> &nbsp;&nbsp; </span>
+        <a id="okbutton" href="javascript:simplecookienotification_v01_create_cookie('simplecookienotification_v01',1,7);" style="position: relative; background: #339966; color: rgb(255, 255, 255); padding: 5px 15px; text-decoration: none; font-size: 12px; font-weight: normal; border: 0px solid rgb(255, 243, 224); border-radius: 0px;">AKCEPTUJĘ</a><div id="jwc_hr2" style="height: 10px; display: block;"></div>
+    </div>
+</div>
+<script>var galTable = new Array(); var galx = 0;</script>
+<script>function simplecookienotification_v01_create_cookie(name, value, days) { if (days) { var date = new Date(); date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); var expires = "; expires=" + date.toGMTString(); } else var expires = ""; document.cookie = name + "=" + value + expires + "; path=/"; document.getElementById("simplecookienotification_v01").style.display = "none"; } function simplecookienotification_v01_read_cookie(name) { var nameEQ = name + "="; var ca = document.cookie.split(";"); for (var i = 0; i < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == " ") c = c.substring(1, c.length); if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length); } return null; } var simplecookienotification_v01_jest = simplecookienotification_v01_read_cookie("simplecookienotification_v01"); if (simplecookienotification_v01_jest == 1) { document.getElementById("simplecookienotification_v01").style.display = "none"; }</script>

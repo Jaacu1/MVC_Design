@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "My favourite books";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section metatags
+{
+    <meta name="description" content="Home" />
+    <meta name="keywords" content="Home" />
+}
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-item nav-link active" href="~/Home/Home">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link" href="~/Home/Contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-item nav-link" href="~/Home/Index">PL/EN</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color:LightGray">
+    <div class="w3-content">
+        <h1 class="w3-cen" style="text-align:center">My favourite books</h1>
+        <h5 class="w3-padding-32" style="text-align:center">
+            <i>Nothing kills time like a book</i>
+            <br>Cesare Pavese
+        </h5>
+
+        <p class="w3-text-grey">
+            Hey, my name is Jacek, I'm 28 years old and I come from Warsaw. In my free time I like to ride a bike, play games, spend time
+            with my friends and read books. This website is about the last of those hobbies. You can find my my favourite books and series here
+            and some info about them. Take a look, maybe you'll find something for yourself.
+        </p>
+    </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h2>Series <i>Kingkiller Chronicles</i></h2>
+            <h5 class="w3-padding-32">
+                Author: Patrick Rothfuss
+                <br><br>
+                <i>The Name of the Wind</i> (2007)<br>
+                <i>The Wise Man's Fear</i> (2011)<br>
+                <i>The Doors of Stone</i> (not yet released)
+            </h5>
+            <p class="w3-text-grey">
+                The Kingkiller Chronicle is a fantasy book series by Patrick Rothfuss, which recounts the story of Kvothe, an adventurer and
+                musician. The book is largely told in a "story-within-a-story" format, where the reader learns about the story of Kvothe's
+                life as he narrates it to a scribe. The first two books, The Name of the Wind and The Wise Man's Fear, were released in 2007
+                and 2011, respectively. Despite a decade having passed, the third novel titled The Doors of Stone has not yet been released.
+                The two released books have sold over 10 million copies.<br>
+                The plot is divided into two different timelines: the present, in which Kvothe tells the story of his life to a man known
+                as the Chronicler in the Waystone Inn, and Kvothe's past, which makes up the majority of the first two books. The present-day
+                interludes are in third person from the perspective of multiple characters, while the story of Kvothe's life is told entirely
+                in the first person from his own perspective. The series also contains many metafictional stories-within-stories from varying
+                perspectives, most of which are recounted by Kvothe, having been heard from other characters in his past.<br>
+            </p>
+            <p margin-top: 30px>
+                @Html.ActionLink("Read more...", "Kingkiller_chronicles")
+            </p>
+        </div>
+        <div class="w3-third w3-center">
+            <img src="~/Content/images/coverR1.jpg" alt="Kingkiller chronicles" class="w3-padding-64 w3-text-red">
+        </div>
+    </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h2>Series <i>Tales of the Kin</i></h2>
+            <h5 class="w3-padding-32">
+                Author: Douglas Hulick
+                <br><br>
+                <i>Among Thieves</i> (2011)<br>
+                <i>Sworn in Steel</i> (2014)<br>
+            </h5>
+            <p class="w3-text-grey">
+                Tales of the Kin is fast-paced adventure yarn told from the viewpoint of Drothe, a career criminal who is a member of the Kin
+                (basically a Renaissance-era mafia-type organization, only less...organized). He is neither the best fighter, the best thief,
+                the best sneak, nor even the smartest guy in the room most days (that’s what he has his friends for). But what he is is
+                persistent. And durable. Drothe gets the shit kicked out of him. A lot.<br>
+                He gets involved in a large scale intrigue, which makes him a lot of enemies. With help of his friend - one of the best
+                mercenary in the world - Bronze Degan, and his special power allowing him to see in darkness, along with his cunningness
+                and flair he has to solve the mystery to stay alive
+            </p>
+            <p margin-top: 30px>
+                @Html.ActionLink("Read more...", "Tales_of_the_kin")
+            </p>
+        </div>
+        <div class="w3-third w3-center">
+            <img src="~/Content/images/coverH1.jpg" alt="Tales of the Kin" class="w3-padding-64 w3-text-red">
+        </div>
+    </div>
+</div>
